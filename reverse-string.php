@@ -8,9 +8,14 @@ function reverse_string(string $str):string{
      throw new Exception("Le type attendu est incorrect");
     }
     return $t;
-    var_dump($argv)
+    var_dump($argv);
 }
- 
+ try{
+    echo reverse_string("hello");
+ }
+ catch(Exception $e){
+    echo $e->getMessage();
+ }
 
 
  echo reverse_string("hello");
