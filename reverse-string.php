@@ -4,7 +4,7 @@ function reverse_string(string $str):string{
     for($i =strlen($str); $i>=0; $i--){
         $t .=substr($str, $i, 1);
     }
-    if($str !== string){
+    if($ string){
      throw new Exception("Le type attendu est incorrect");
     }
     return $t;
